@@ -1,0 +1,288 @@
+// All date/time in UTC
+const maintenanceInProgress = `We will be currently performing planned maintenance works on our Singnet Email services from <DATE> 00:00am to <DATE> 6:00am.
+During this period, you may not be able to access your mailbox.
+We apologise for the inconvenience.`
+const maintenanceWindows = [
+    {
+        // 'upcomingStart': new Date("2022-05-16T15:30:00Z"),
+        'inProgressStart': new Date("2022-05-16T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-16T22:00:00Z"),
+        'showLogin': true,
+        // 'upcomingMessage': maintenanceInProgress.replaceAll('<DATE>', '17 May'),
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '17 May')
+    }, {
+        'inProgressStart': new Date("2022-05-17T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-17T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '18 May')
+    }, {
+        'inProgressStart': new Date("2022-05-18T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-18T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '19 May')
+    }, {
+        'inProgressStart': new Date("2022-05-19T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-19T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '20 May')
+    }, {
+        'inProgressStart': new Date("2022-05-20T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-20T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '21 May')
+    }, {
+        'inProgressStart': new Date("2022-05-21T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-21T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '22 May')
+    }, {
+        'inProgressStart': new Date("2022-05-22T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-22T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '23 May')
+    }, {
+        'inProgressStart': new Date("2022-05-23T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-23T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '24 May')
+    }, {
+        'inProgressStart': new Date("2022-05-24T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-24T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '25 May')
+    }, {
+        'inProgressStart': new Date("2022-05-27T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-27T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '28 May')
+    }, {
+        'inProgressStart': new Date("2022-05-28T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-28T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '29 May')
+    }, {
+        'inProgressStart': new Date("2022-05-29T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-29T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '30 May')
+    }, {
+        'inProgressStart': new Date("2022-05-30T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-30T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '31 May')
+    }, {
+        'inProgressStart': new Date("2022-05-31T15:30:00Z"),
+        'inProgressEnd': new Date("2022-05-31T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '1 June')
+    }, {
+        'inProgressStart': new Date("2022-06-01T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-01T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '2 June')
+    }, {
+        'inProgressStart': new Date("2022-06-02T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-02T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '3 June')
+    }, {
+        'inProgressStart': new Date("2022-06-03T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-03T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '4 June')
+    }, {
+        'inProgressStart': new Date("2022-06-04T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-04T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '5 June')
+    }, {
+        'inProgressStart': new Date("2022-06-05T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-05T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '6 June')
+    }, {
+        'inProgressStart': new Date("2022-06-06T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-06T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '7 June')
+    }, {
+        'inProgressStart': new Date("2022-06-07T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-07T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '8 June')
+    }, {
+        'inProgressStart': new Date("2022-06-08T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-08T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '9 June')
+    }, {
+        'inProgressStart': new Date("2022-06-09T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-09T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '10 June')
+    }, {
+        'inProgressStart': new Date("2022-06-10T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-10T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '11 June')
+    }, {
+        'inProgressStart': new Date("2022-06-11T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-11T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '12 June')
+    }, {
+        'inProgressStart': new Date("2022-06-12T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-12T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '13 June')
+    }, {
+        'inProgressStart': new Date("2022-06-13T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-13T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '14 June')
+    }, {
+        'inProgressStart': new Date("2022-06-14T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-14T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '15 June')
+    }, {
+        'inProgressStart': new Date("2022-06-15T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-15T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '16 June')
+    }, {
+        'inProgressStart': new Date("2022-06-16T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-16T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '17 June')
+    }, {
+        'inProgressStart': new Date("2022-06-17T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-17T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '18 June')
+    }, {
+        'inProgressStart': new Date("2022-06-18T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-18T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '19 June')
+    }, {
+        'inProgressStart': new Date("2022-06-19T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-19T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '20 June')
+    }, {
+        'inProgressStart': new Date("2022-06-20T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-20T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '21 June')
+    }, {
+        'inProgressStart': new Date("2022-06-21T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-21T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '22 June')
+    }, {
+        'inProgressStart': new Date("2022-06-22T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-22T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '23 June')
+    }, {
+        'inProgressStart': new Date("2022-06-23T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-23T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '24 June')
+    }, {
+        'inProgressStart': new Date("2022-06-24T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-24T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '25 June')
+    }, {
+        'inProgressStart': new Date("2022-06-25T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-25T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '26 June')
+    }, {
+        'inProgressStart': new Date("2022-06-26T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-26T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '27 June')
+    }, {
+        'inProgressStart': new Date("2022-06-27T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-27T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '28 June')
+    }, {
+        'inProgressStart': new Date("2022-06-28T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-28T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '29 June')
+    }, {
+        'inProgressStart': new Date("2022-06-29T15:30:00Z"),
+        'inProgressEnd': new Date("2022-06-29T22:00:00Z"),
+        'showLogin': true,
+        'inProgressMessage': maintenanceInProgress.replaceAll('<DATE>', '30 June')
+    }
+]
+
+var timer
+var upcomingShown = false
+var inProgressShown = false
+
+function maintenanceState(maintenance, now) {
+    if (now >= maintenance.upcomingStart && now < maintenance.inProgressStart) {
+        return "upcoming"
+    } else if (now >= maintenance.inProgressStart && now < maintenance.inProgressEnd) {
+        return "active"
+    }
+
+    return "none"
+}
+
+function checkMaint() {
+    if (!timer) {
+        timer = setInterval(function () {
+            let state = "none"
+            let maintenance = null
+            const now = new Date();
+            for (const maintenanceWindow of maintenanceWindows) { 
+                state = maintenanceState(maintenanceWindow, now)
+                if (state !== "none") {
+                    maintenance = maintenanceWindow
+                    break
+                }
+            }
+
+            if (state === "upcoming") {
+                if (upcomingShown) return
+                
+                $('.maintenance').html(maintenance.upcomingMessage)
+                $('.maintenance').show()
+                $('#iframe_login_area').css('height', '690px');
+                $('#iframe_login').css('height', '590px');
+                upcomingShown = true
+            } else if (state === "active") {
+                if (inProgressShown) return
+
+                $('.maintenance').html(maintenance.inProgressMessage)
+                $('.maintenance').show()
+                if (maintenance.showLogin) {
+                    $('#iframe_login_area').css('height', '690px');
+                    $('#iframe_login').css('height', '590px');
+                } else {
+                    $('#iframe_login').hide()
+                    $('#iframe_login_area').css('height', '100%');
+                }
+                inProgressShown = true;
+            } else if (state === "none" && (upcomingShown || inProgressShown)) {
+                $('.maintenance').html('')
+                $('.maintenance').hide()
+                $('#iframe_login').show()
+                $('#iframe_login').css('height', '100%');
+                $('#iframe_login_area').css('height', '500px');
+                upcomingShown = false
+                inProgressShown = false
+            }
+        }, 5000)
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkMaint, false);
